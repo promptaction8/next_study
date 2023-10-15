@@ -2,24 +2,24 @@ const container = () => {
     return (
         <div className="flex h-screen w-screen  items-center justify-center bg-[url('/images/galaxy_waifu2x.png')] bg-cover bg-center bg-no-repeat">
             <div className="bg-gray flex h-4/6 w-2/3 shrink-0 flex-row items-center justify-center rounded-xl border-2 border-solid border-slate-400 bg-opacity-5 shadow-2xl backdrop-blur-lg">
-                <div className="flex h-5/6 w-3/4 items-center justify-center">
-                    <div className="h-5/6 w-96">
-                        <h3 className="my-10 mb-20 text-justify font-sans text-7xl font-bold text-white">
+                <div className="flex h-5/6 w-3/4 items-center justify-center p-4">
+                    <div className="h-5/6 w-96 flex-col ">
+                        <h3 className="my-10 mb-20 text-center font-sans text-7xl font-bold text-white">
                             LOGIN
                         </h3>
-                        <form>
+                        <form className="center">
                             <label>
                                 <p className="my-4 text-white">USER NAME</p>
                                 <input
                                     type="text"
                                     placeholder="USERNAME"
-                                    className="h-10 w-72 rounded-2xl border-2 border-solid border-white bg-transparent text-white"
+                                    className="h-10 w-72 rounded-2xl border-2 border-solid border-white bg-transparent pl-4 text-white"
                                 ></input>
                             </label>
                             <label>
                                 <p className="my-4 text-white">PASSWORD</p>
                                 <input
-                                    className="h-10 w-72 rounded-2xl border-2 border-solid border-white bg-transparent text-white"
+                                    className="h-10 w-72 rounded-2xl border-2 border-solid border-white bg-transparent pl-4 text-white"
                                     type="password"
                                     placeholder="PASSWORD"
                                 ></input>
@@ -41,7 +41,11 @@ const container = () => {
                 </div>
                 <div className="flex h-full w-1/3 items-center justify-center overflow-hidden rounded-xl bg-[url('/images/pastel_bg.png')] bg-cover bg-center bg-no-repeat">
                     <div className="flex h-96 w-96 items-center justify-center">
-                        <img src="/images/login_icon.png" width={200}></img>
+                        <img
+                            src="/images/login_icon.png"
+                            width={200}
+                            alt="LOGIN ICON"
+                        ></img>
                     </div>
                     <p></p>
                 </div>
