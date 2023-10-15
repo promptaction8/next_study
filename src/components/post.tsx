@@ -4,9 +4,7 @@ import { editingPostIndexAtom } from '@/atoms/post'
 
 const Post = () => {
     const [posts, setPosts] = useAtom(myPostAtom)
-
     const [, setEditingIndex] = useAtom(editingPostIndexAtom)
-
     const deletePost = (index) => {
         const updatedPosts = [...posts]
         updatedPosts.splice(index, 1)
